@@ -1,3 +1,286 @@
-<div>
-  These are main stream
+<div class="container">
+  <div class="navbar">
+    <div class="logo">
+      <span class="logo-name">My Fonts</span>
+    </div>
+    <div class="nav">
+      <div class="top">
+        <form action="" class="form-top">
+          <input type="text" class="input-top" placeholder="Search"/>
+        </form>
+        <ul class="top-ul">
+          <li><a href="#">learn</a></li>
+          <li><a href="#">USD</a></li>
+          <li><a href="#">EN</a></li>
+          <li><a href="#"><button class="btn-login">Log in</button></a></li>
+        </ul>
+      </div>
+      <div class="bottom">
+        <ul class="bottom-ul">
+          <li><a href="#">Browse by</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Bestseller</a></li>
+          <li><a href="#">Hot New Fonts</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
+<div class="container2">
+  <div class="main-div">
+    <span class="Bestseller">Best sellers</span>
+    <span class="These">10 selling fonts from all of MyFonts in the last month. Updated hourly!</span>
+    <form action="" class="form2">
+      <input type="text" placeholder="Type your own text" class="input2"/>
+    </form>
+  </div>
+</div>
+<div class="container3">
+  <div class="head">
+    <div class="left">
+      <span>Neue Helvetica</span>
+      <span>59 styles</span>
+      <span>By Linotype</span>
+    </div>
+    <div class="right">
+      <span>From $42.92</span>
+      <button class="btn">Get this Font</button>
+    </div>
+  </div>
+  <span class="abc">1234ABCDEFabcdef</span>
+  <div class="images">
+    <img src="{{ 'a.avif' | asset_url }}"  alt="Neue Helvetica Sample A" />
+    <img src="{{ 'b.avif' | asset_url }}"  alt="Neue Helvetica Sample B" />
+    <img src="{{ 'c.avif' | asset_url }}"  alt="Neue Helvetica Sample C" />
+    <img src="{{ 'd.avif' | asset_url }}"  alt="Neue Helvetica Sample D" />
+  </div>
+</div>
+<div class="container3">
+  <div class="bd">
+    <div class="head">
+      <div class="left">
+        <span>Avenir Next</span>
+        <span>32 styles</span>
+        <span>By Linotype</span>
+      </div>
+      <div class="right">
+        <span>From $42.92</span>
+        <button class="btn">Get this Font</button>
+      </div>
+    </div>
+    <span class="abc">The quick brown fox jumps over the lazy dog.</span>
+    <div class="images">
+      <img src="{{ 'e.avif' | asset_url }}" alt="Avenir Next Sample E" />
+      <img src="{{ 'f.avif' | asset_url }}" alt="Avenir Next Sample F" />
+      <img src="{{ 'g.avif' | asset_url }}" alt="Avenir Next Sample G" />
+      <img src="{{ 'h.avif' | asset_url }}" alt="Avenir Next Sample H" />
+    </div>
+  </div>
+</div>
+
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+
+}
+.navbar{
+    display: flex; 
+    align-items: center;
+    width: 100%;
+   border-bottom: 1px solid black;
+}
+
+
+/* nav{
+    display: flex;
+    align-items: center;
+     width: 100%;
+     background-color: aqua;
+   border-left: 1px solid black;
+} */
+.logo{
+
+   padding-left: 1rem;
+}
+.logo-name{
+      display: block;
+    color: #00a8ff;
+    font-size: 2rem;
+    width: 11rem;
+    /* margin-left: 0.2rem; */
+    padding-left: 0.1rem;    
+}
+.nav{
+    border-left: 1px solid black;
+}
+.top{
+    display: flex;
+    align-items: center;
+     justify-content: space-between; 
+    border-bottom: 1px solid black; 
+    width: 75.8rem;
+    
+     padding: 0rem 1rem;
+}
+
+.form-top{
+    height: 100%;
+    border-right: 1px solid black;
+}
+.input-top{
+   height: 2.9rem;
+   width: 20rem;
+   outline: none;
+   border: none;
+
+}
+
+.bottom{
+     width: 75rem;
+       padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+ 
+}
+.top-ul{
+    display: flex;
+   justify-content: end; 
+   align-items: center;
+    gap: 2rem;
+    margin-right: 3rem;
+    /* width: 70%; */
+}
+.btn-login{
+    background-color:#1b72e8;
+    border: none;
+    color: white;
+    padding: 0.5rem 0.9rem;
+    border-radius: 0.5rem;
+}
+
+.bottom-ul{
+        display: flex;
+     justify-content: space-evenly; 
+    gap: 1rem;
+     width: 100%; 
+}
+
+
+li{
+    list-style: none;
+     
+}
+a{
+     color: #6e7b8b;
+      text-decoration: none;
+}
+a:hover{
+color:black ;
+}
+
+
+/* container2 */
+
+.container2{
+   
+}
+.main-div{
+     display: flex;
+     flex-direction: column;
+     /* gap: 1rem; */
+}
+.Bestseller{
+    padding: 1.1rem 0.8rem;
+    font-size: 23px;
+    color: #6e7b8b;
+}
+.These{
+    color: #6e7b8b;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 0.9rem 0.8rem;
+    background: #f9fafb;
+}
+.form2{
+    border-bottom: 1px solid black;
+}
+.input2{
+    width: 40%;
+    padding: 0.6rem 0.8rem;
+    border: none;
+   outline-color: black;
+
+}
+
+ .container3{
+    margin-top: 1rem;
+  
+   padding-bottom: 1.5rem;
+} 
+
+
+.head{
+     display: flex;
+     justify-content: space-between;
+     gap: 1rem;
+}
+.left{
+    display: flex;
+    gap: 1rem;
+    padding: 0 0.8rem;
+    color: #6e7b8b;
+}
+
+.right{
+    color: #6e7b8b;
+    display: flex;
+    gap: 1rem;
+    margin-right: 2rem;
+    align-items: center;
+}
+.btn{
+    border:1px solid #1b72e8;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.btn:hover{
+    background: #1b72e8;
+    color: white;
+}
+
+.abc{
+
+    font-size: 3rem;
+    padding: 0 0.8rem;
+}
+
+.images{
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+   padding-left: 2.5rem;
+}
+img{
+    border-radius: 0.4rem;
+    width: 23%;
+ padding: 0.5 0.8rem;
+}
+/* .btn-login{
+    background-color:#1b72e8;
+    border: none;
+    color: white;
+    padding: 0.5rem;
+} */
+
+.bd{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 2rem 0rem;
+}
+  </style>
