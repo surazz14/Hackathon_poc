@@ -1,4 +1,6 @@
-<div class="continaer">
+<div class="continaer" >
+  <div class='test-gap' >
+    </div>
     <div class="container-nav">
       <div class="logo">
         <img src="{{ 'myfont.png' | asset_url }}" alt="" class="logo-img" />
@@ -218,6 +220,10 @@
         padding: 0;
         margin: 0;
     }
+
+    .test-gap {
+      height: "500px";
+  }
     
     .container-nav {
         display: flex;
@@ -587,12 +593,7 @@
     </style>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        setTimeout(function() {
-          var homeElement = document.querySelector('.logo');
-          if (homeElement) {
-            homeElement.style.display = 'block';
-          }
-        }, 5000);
-      });
-      </script>"
+      setTimeout(() => {
+        document.querySelector('.test-gap').style.display = 'none';
+      }, 3000);
+    </script>
